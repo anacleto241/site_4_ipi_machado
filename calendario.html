@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário - Quarta IPI Machado</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Menu (loaded from external file) -->
+    <div id="menu-container"></div>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <div class="row">
+            <!-- Sidebar Navigation -->
+            <div class="col-lg-3 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center mb-4">Quarta IPI Machado</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="institucional.html">Institucional</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Notícias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="calendario.html">Calendário</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Galeria</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="grupos.html">Grupos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contato</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Dízimos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content Area -->
+            <div class="col-lg-9">
+                <!-- Page Header -->
+                <div class="mb-5">
+                    <h1 class="section-title text-start">Calendário de Eventos</h1>
+                    <p class="lead">Acompanhe nossa programação mensal de cultos, estudos e eventos especiais</p>
+                </div>
+
+                <!-- Month and Filters -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h2 class="mb-0">Julho de 2025</h2>
+                            <div class="dropdown">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="filterDropdown" data-bs-toggle="dropdown">
+                                    Todos
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item active" href="#">Todos</a></li>
+                                    <li><a class="dropdown-item" href="#">Culto</a></li>
+                                    <li><a class="dropdown-item" href="#">Ensino</a></li>
+                                    <li><a class="dropdown-item" href="#">Ministério</a></li>
+                                    <li><a class="dropdown-item" href="#">Evento Especial</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h3 class="mb-3">Eventos do Mês</h3>
+
+                        <!-- Event 1 -->
+                        <div class="event-card mb-3">
+                            <div class="d-flex align-items-start">
+                                <div class="event-badge bg-primary me-3">Culto</div>
+                                <div class="flex-grow-1">
+                                    <h4 class="mb-1">Culto Dominical Matutino</h4>
+                                    <p class="mb-1 text-muted">sáb., 20 de jan. | Templo Principal</p>
+                                    <span class="badge bg-light text-dark">Evento Recorrente</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Event 2 -->
+                        <div class="event-card mb-3">
+                            <div class="d-flex align-items-start">
+                                <div class="event-badge bg-primary me-3">Culto</div>
+                                <div class="flex-grow-1">
+                                    <h4 class="mb-1">Culto Dominical Vespertino</h4>
+                                    <p class="mb-1 text-muted">sáb., 20 de jan. | Templo Principal</p>
+                                    <span class="badge bg-light text-dark">Evento Recorrente</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Regular Hours -->
+                        <div class="mt-4">
+                            <h3 class="mb-3">Horários Regulares</h3>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>Cultos Dominicais</th>
+                                            <th>Durante a Semana</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Matutino<br>Vespertino</td>
+                                            <td>
+                                                Quarta - Estudo Bíblico<br>
+                                                Sexta - Jovens
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>19:00</td>
+                                            <td>
+                                                19:30<br>
+                                                19:30
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                       
+                    </div>
+                </div>
+
+                <!-- More Events -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <!-- Event 3 -->
+                        <div class="event-card mb-3">
+                            <div class="d-flex align-items-start">
+                                <div class="event-badge bg-success me-3">Ensino</div>
+                                <div class="flex-grow-1">
+                                    <h4 class="mb-1">Estudo Bíblico</h4>
+                                    <p class="mb-1 text-muted">ter., 16 de jan. 19:30 | Sala de Ensino</p>
+                                    <span class="badge bg-light text-dark">Evento Recorrente</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Event 4 -->
+                        <div class="event-card mb-3">
+                            <div class="d-flex align-items-start">
+                                <div class="event-badge bg-warning me-3">Ministério</div>
+                                <div class="flex-grow-1">
+                                    <h4 class="mb-1">Reunião de Jovens</h4>
+                                    <p class="mb-1 text-muted">qui., 18 de jan. 19:30 | Sala dos Jovens</p>
+                                    <span class="badge bg-light text-dark">Evento Recorrente</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Event 5 -->
+                        <div class="event-card mb-3">
+                            <div class="d-flex align-items-start">
+                                <div class="event-badge bg-danger me-3">Evento Especial</div>
+                                <div class="flex-grow-1">
+                                    <h4 class="mb-1">Conferência de Avivamento</h4>
+                                    <p class="mb-1 text-muted">qua., 24 de jan. 19:00 | Templo Principal</p>
+                                    <span class="badge bg-light text-dark">Evento Recorrente</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Event 6 -->
+                        <div class="event-card mb-3">
+                            <div class="d-flex align-items-start">
+                                <div class="event-badge bg-warning me-3">Ministério</div>
+                                <div class="flex-grow-1">
+                                    <h4 class="mb-1">Ensaio do Coral</h4>
+                                    <p class="mb-1 text-muted">seg., 22 de jan. 20:00 | Sala de Música</p>
+                                    <span class="badge bg-light text-dark">Evento Recorrente</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Categories -->
+                        <div class="mt-4">
+                            <h3 class="mb-3">Categorias</h3>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-primary">Culto</span>
+                                <span class="badge bg-success">Ensino</span>
+                                <span class="badge bg-warning text-dark">Ministério</span>
+                                <span class="badge bg-danger">Evento Especial</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add to Calendar -->
+                <div class="card bg-light mb-4">
+                    <div class="card-body text-center py-4">
+                        <h2 class="mb-3">Adicionar à Agenda</h2>
+                        <p class="mb-4">Sincronize nossa programação com sua agenda pessoal.</p>
+                        <a href="#" class="btn btn-dark">Adicionar ao Google Agenda</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (loaded from external file) -->
+    <div id="footer-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // Load menu and footer
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('menu.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('menu-container').innerHTML = data;
+                });
+
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-container').innerHTML = data;
+                });
+        });
+    </script>
+</body>
+</html>

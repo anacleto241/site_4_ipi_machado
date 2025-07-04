@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institucional - Quarta IPI Machado</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Menu (loaded from external file) -->
+    <div id="menu-container"></div>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <div class="row">
+         
+            <!-- Main Content Area -->
+            <div class="col-lg-9">
+                <!-- Page Header -->
+                <div class="mb-5">
+                    <h1 class="section-title text-start">Nossa História</h1>
+                    <p class="lead">Conheça a trajetória da Quarta Igreja Presbiteriana Independente de Machado</p>
+                </div>
+
+                <!-- History Section -->
+                <section class="mb-5">
+                    <h2 class="mb-4">História da Quarta IPI de Machado</h2>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <p class="card-text">A Quarta Igreja Presbiteriana Independente de Machado nasceu do desejo de servir a Deus e à comunidade local com dedicação e amor. Fundada em [ano], nossa igreja tem sido um farol de esperança e fé na cidade de Machado.</p>
+                            
+                            <p class="card-text">Desde o início, nossa congregação se caracteriza pela simplicidade, pela pregação fiel da Palavra de Deus e pelo cuidado pastoral com cada membro. Ao longo dos anos, temos crescido não apenas em número, mas principalmente em maturidade espiritual e compromisso com o Reino de Deus.</p>
+                            
+                            <p class="card-text">Hoje, continuamos firmes em nossa missão de proclamar o Evangelho, discipular vidas e servir à comunidade com o amor de Cristo.</p>
+                        </div>
+                    </div>
+
+                   
+                </section>
+
+                <!-- Mission, Vision and Values -->
+                <section class="mb-5">
+                    <div class="row">
+                        <!-- Mission -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h3 class="card-title">Missão</h3>
+                                    <p class="card-text">Proclamar o Evangelho de Jesus Cristo, formar discípulos maduros e servir à comunidade com amor e dedicação.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Vision -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h3 class="card-title">Visão</h3>
+                                    <p class="card-text">Ser uma igreja relevante e transformadora, que impacta vidas e comunidades através do poder do Evangelho.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Values -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h3 class="card-title">Valores</h3>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2">• Fidelidade à Palavra de Deus</li>
+                                        <li class="mb-2">• Amor e cuidado pastoral</li>
+                                        <li class="mb-2">• Comunhão fraternal</li>
+                                        <li class="mb-2">• Serviço à comunidade</li>
+                                        <li>• Crescimento espiritual</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Leadership -->
+                <section>
+                    <h2 class="mb-4">Nossa Liderança</h2>
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Pastor Principal</h4>
+                                    <p class="card-text">Liderança pastoral e ensino</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Pastor Auxiliar</h4>
+                                    <p class="card-text">Apoio pastoral e ministérios</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Presbitério</h4>
+                                    <p class="card-text">Liderança da igreja</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (loaded from external file) -->
+    <div id="footer-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+        // Load menu and footer
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('menu.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('menu-container').innerHTML = data;
+                });
+
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-container').innerHTML = data;
+                });
+        });
+    </script>
+</body>
+</html>

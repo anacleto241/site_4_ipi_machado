@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias - Quarta IPI Machado</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+   
+</head>
+<body>
+    <!-- Menu (loaded from external file) -->
+    <div id="menu-container"></div>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <div class="row">
+
+            <!-- Main Content Area -->
+            <div class="col-lg-9">
+                <!-- Page Header -->
+                <div class="mb-5">
+                    <h1 class="section-title text-start">Notícias e Eventos</h1>
+                    <p class="lead">Fique por dentro de tudo que acontece em nossa igreja</p>
+                </div>
+
+                <div class="row">
+                    <!-- Latest News -->
+                    <div class="col-lg-8 mb-5">
+                        <h2 class="mb-4">Últimas Notícias</h2>
+                        
+                        <!-- News 1 -->
+                        <div class="news-card">
+                            <span class="news-category">Evento</span>
+                            <h3 class="mb-2">Conferência de Avivamento 2024</h3>
+                            <p class="news-date">14 de janeiro de 2024</p>
+                            <p class="mb-3">Participe conosco de três dias de muito louvor, oração e palavra de Deus. Inscrições abertas.</p>
+                            <a href="#" class="read-more">Ler mais</a>
+                        </div>
+                        
+                        <!-- News 2 -->
+                        <div class="news-card">
+                            <h3 class="mb-2">Novo Grupo de Jovens</h3>
+                            <p class="news-date">09 de janeiro de 2024</p>
+                            <p class="mb-3">Estamos iniciando um novo grupo de jovens às sextas-feiras. Venha fazer parte!</p>
+                            <a href="#" class="read-more"><strong>Ler mais</strong></a>
+                        </div>
+                        
+                        <!-- News 3 -->
+                        <div class="news-card">
+                            <h3 class="mb-2">Campanha de Agasalhos</h3>
+                            <p class="news-date">04 de janeiro de 2024</p>
+                            <p class="mb-3">Participe da nossa campanha de arrecadação de agasalhos para o inverno. Sua doação faz a diferença.</p>
+                            <a href="#" class="read-more"><strong>Ler mais</strong></a>
+                        </div>
+                        
+                        <!-- News 4 -->
+                        <div class="news-card">
+                            <h3 class="mb-2">Estudo Bíblico às Quartas</h3>
+                            <p class="news-date">31 de dezembro de 2023</p>
+                            <p class="mb-3">Todas as quartas-feiras, às 19h30, temos estudo bíblico. Venha crescer conosco na Palavra.</p>
+                            <div class="text-end">
+                                <a href="https://preview-machado-church-connect.loveble.apr/noticias" class="btn btn-link">https://preview-machado-church-connect.loveble.apr/noticias</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Upcoming Events -->
+                    <div class="col-lg-4 mb-5">
+                        <h2 class="mb-4">Próximos Eventos</h2>
+                        <ul class="event-list">
+                            <li>
+                                <h5 class="mb-1">Culto de Oração</h5>
+                                <p class="news-date">19 de janeiro de 2024 19:30</p>
+                            </li>
+                            <li>
+                                <h5 class="mb-1">Escola Dominical</h5>
+                                <p class="news-date">20 de janeiro de 2024 09:00</p>
+                            </li>
+                            <li>
+                                <h5 class="mb-1">Ensaio do Coral</h5>
+                                <p class="news-date">21 de janeiro de 2024 20:00</p>
+                            </li>
+                        </ul>
+                        <div class="text-center mt-3">
+                            <a href="calendario.html" class="btn btn-outline-dark">Ver Calendário Completo</a>
+                        </div>
+                        
+                        <!-- Service Times -->
+                        <div class="service-times mt-5">
+                            <h3 class="mb-3">Horários dos Cultos</h3>
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Domingo</strong></td>
+                                        <td>09:00 e 19:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Quarta-feira</strong></td>
+                                        <td>19:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Sexta-feira</strong></td>
+                                        <td>19:30</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="mb-0"><strong>Ensino</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (loaded from external file) -->
+    <div id="footer-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // Load menu and footer
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('menu.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('menu-container').innerHTML = data;
+                });
+
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-container').innerHTML = data;
+                });
+        });
+    </script>
+</body>
+</html>
