@@ -1,0 +1,1 @@
+import * as  prismic from 'https://cdn.skypack.dev/@prismicio/client';
