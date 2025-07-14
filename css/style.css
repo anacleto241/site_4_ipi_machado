@@ -831,3 +831,79 @@ body {
         font-size: 1.25rem;
     }
 }
+
+
+
+
+/* Estilos para o carrossel no header */
+.header-carousel {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    overflow: hidden;
+}
+
+.header-carousel .carousel {
+    height: 100%;
+}
+
+.header-carousel .carousel-inner {
+    height: 100%;
+}
+
+.header-carousel .carousel-item {
+    height: 100%;
+}
+
+.header-carousel .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    filter: brightness(0.6);
+}
+
+.carousel-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    color: white;
+}
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 768px) {
+    .header-carousel {
+        height: 80vh;
+        min-height: 500px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+}
+
+/* Melhorias nos controles do carrossel */
+.carousel-control-prev, 
+.carousel-control-next {
+    width: 5%;
+    opacity: 0.8;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+}

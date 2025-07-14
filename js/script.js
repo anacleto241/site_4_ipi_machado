@@ -37,3 +37,24 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+// Configuração do carrossel do header
+document.addEventListener('DOMContentLoaded', function() {
+    const headerCarousel = new bootstrap.Carousel('#headerCarousel', {
+        interval: 5000, // Muda a cada 5 segundos
+        pause: false, // Não pausa ao passar o mouse
+        wrap: true // Volta ao primeiro slide após o último
+    });
+    
+    // Pausa o carrossel quando estiver em um modal ou outra janela
+    document.querySelectorAll('[data-bs-toggle="modal"], [data-bs-toggle="collapse"]')
+        .forEach(element => {
+            element.addEventListener('show.bs.modal', () => {
+                headerCarousel.pause();
+            });
+            element.addEventListener('hide.bs.modal', () => {
+                headerCarousel.cycle();
+            });
+        });
+});
