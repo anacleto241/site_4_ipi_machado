@@ -1,0 +1,20 @@
+{
+  "name": "site-ipi-machado",
+  "version": "1.0.0",
+  "description": "Site da Igreja Presbiteriana Independente Machado",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "start": "serve -s .",
+    "dev": "serve -s . -l 3000"
+  },
+  "dependencies": {
+    "@prismicio/client": "^7.0.0"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  },
+  "keywords": ["igreja", "website", "prismic"],
+  "author": "",
+  "license": "ISC"
+}
